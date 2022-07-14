@@ -1,0 +1,88 @@
+[
+    {
+        "keywords":  [
+            "hola",
+            "hola!",
+            "ola",
+            "ole",
+            "inicio",
+            "welcome",
+            "buenos días",
+            "buenas tardes",
+            "buenas noches",
+            "me dieron este número",
+            "venden a crédito",
+            "quisiera saber si venden",
+            "necesito saber"
+        ],
+        "key": "STEP_1"
+    },
+    {
+        "keywords":  [
+            "cursos",
+            "info",
+            "curso"
+        ],
+        "key": "STEP_2"
+    },
+    {
+        "keywords":  [
+            "angular"
+        ],
+        "key": "STEP_2_1"
+    },
+    {
+        "keywords":  [
+            "node"
+        ],
+        "key": "STEP_2_2"
+    },
+    {
+        "keywords":  [
+            "ngrx"
+        ],
+        "key": "STEP_2_3"
+    },
+    {
+        "keywords":  [
+            "aws"
+        ],
+        "key": "STEP_2_4"
+    },
+    {
+        "keywords":  [
+            "asesor",
+            "asesores",
+            "Vendedor",
+            "cobrador"
+        ],
+        "key": "STEP_3"
+    },
+    {
+        "keywords":  [
+            "muchas gracias",
+            "ok",
+            "gracias",
+            "vale gracias"
+        ],
+        "key": "STEP_4"
+    },
+    {
+        "keywords":  [
+            "👉 Youtube"
+        ],
+        "key": "STEP_5"
+    },
+    {
+        "keywords":  [
+            "😎 Cursos"
+        ],
+        "key": "STEP_6"
+    },
+    {
+        "keywords":  [
+            "😁 Telegram"
+        ],
+        "key": "STEP_7"
+    }
+]
