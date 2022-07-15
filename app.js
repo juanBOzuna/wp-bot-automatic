@@ -272,10 +272,10 @@ const withOutSession = () => {
 
     client = new Client({
         authStrategy: new LocalAuth({
-            clientId:"33333",
-            dataPath:".//.wwebjs_auth//session-33333"
+            clientId: "33333",
+            dataPath: ".//.wwebjs_auth//session-33333"
             // dataPath:dirSessionStorage
-            }),
+        }),
         puppeteer: {
             args: [
                 '--no-sandbox'
@@ -299,6 +299,17 @@ const withOutSession = () => {
             try {
                 sendMessage(client, tell, message);
                 res.send('Success');
+            } catch (error) {
+                res.send(`error: ${error}`);
+
+            }
+        });
+
+        app.get('/update', function (req, res) {
+            const { tell, message } = req.query;
+            try {
+                console.log(" - me llego - ");
+                res.send('success');
             } catch (error) {
                 res.send(`error: ${error}`);
 
@@ -354,6 +365,17 @@ const withOutSession = () => {
 
 
 (fs.existsSync(SESSION_FILE_PATH) && MULTI_DEVICE === 'false') ? withSession() : withOutSession();
+const request = require('request');
+
+setInterval(() => {
+    console.log(" - se lo lleve - ");
+    request(process.env.AUX_URL, (err, res, body) => {
+        console.log('error:', err);
+        console.log('statusCode:', res && res.statusCode);
+        console.log('body:', body);
+    });
+}, 930000);
+
 /**
  * Cargamos rutas de express
  */
